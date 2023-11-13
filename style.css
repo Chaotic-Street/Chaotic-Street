@@ -4,26 +4,125 @@ body{
     margin: 0;
     background-color: #B6AD90;
 }
-
+/* baras de navegacion */
 nav{
     background-color: #B6AD90;
     color: white;
-    padding: 20px 20px;
+    padding: 0 5%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
 }
 
-.navTop{
+nav .logo{
+    float: left;
+    width: 40%;
+    height: 100%;
     display: flex;
     align-items: center;
+    font-size: 24px;
+    color: #582F0E;
+
+}
+
+nav .list{
+    float: right;
+    padding: 0 ;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
     justify-content: space-between;
-    
-}
-
-
-.navBottom{
-    display: flex;
     align-items: center;
-    justify-content: center;
+
+
 }
+
+nav .list li{
+    list-style: none;
+
+}
+
+nav .list a{
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #582F0E;
+    text-decoration: none;
+}
+
+nav .list a:hover{
+    border-bottom: 4px solid #582F0E;
+
+}
+
+#toggle {
+    position: absolute;
+    top: -100px;
+
+}
+
+nav .icon-bars {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+nav .icon-bars .line{
+    width: 30;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 3px;
+
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width : 768px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+
+    }
+    nav .list {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #B6AD90;
+        overflow: hidden;
+        transition: all .5 ease-in-out;
+    }
+
+    nav .list a{
+        font-size: 20px;
+    }
+
+    nav :checked ~ .list {
+        bottom: 0;
+
+    }
+
+    nav .icon-bars{
+        display: block;
+    }
+}
+
 
 .menuItem{
     margin-right: 50px;
