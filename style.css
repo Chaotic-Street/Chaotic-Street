@@ -8,6 +8,7 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+
 }
 
 /* baras de navegacion */
@@ -152,6 +153,10 @@ nav .icon-bars .line {
 
   body .gmail {
     font-size: 1em;
+  }
+
+  .OldColections {
+    font-size: 30px;
   }
 
 }
@@ -328,11 +333,29 @@ nav .icon-bars .line {
   margin-top: 100px;
 }
 
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.storeText {
+  font-size: 30px;
+  color: #582F0E;
+}
+
 .OldColections {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  color: #582F0E;
+  font-size: 50px;
 }
 
 .CollectionsImg {
@@ -341,8 +364,29 @@ nav .icon-bars .line {
   justify-content: center;
 }
 
+.space {
+  margin-top: 200px;
+}
+
+.line {
+  background-color: #582F0E;
+  height: 10px;
+}
+
+.layoutimg {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+
+}
+
+/* Discover Frame */
+
 .discoverMainFrame {
-  padding-top: 300;
+
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -367,12 +411,12 @@ nav .icon-bars .line {
   text-align: center;
 }
 
+/* about  */
 .AboutFrameImg {
   display: flex;
   align-items: center;
   justify-content: left;
   width: 500px;
-  height: 500px;
   border-radius: 10px;
 }
 
