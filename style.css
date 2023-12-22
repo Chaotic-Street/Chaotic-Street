@@ -159,6 +159,10 @@ nav .icon-bars .line {
     font-size: 30px;
   }
 
+  .Emoji {
+    flex-wrap: wrap;
+  }
+
 }
 
 /* Pricipal page*/
@@ -459,4 +463,20 @@ nav .icon-bars .line {
   font-size: 40px;
   color: #582F0E;
 
+}
+
+/*  secret web */
+.Emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ButtonEmoji {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #582F0E;
+  color: #ffffff;
 }
